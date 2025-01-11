@@ -375,7 +375,7 @@ chair = get_abstract_matrix("data/non-articulated/chairs/chairsPly/b16.ply")
 chair_mapper = mapper(chair, z_coordinate, balanced_cover, cluster_function, silhouette_method, ϵ = 1.0, measurement_func = point_distances2)
 println("no_of_patches: ", length(chair_mapper.found_patches))
 mapper_chair_plot = plot(chair_mapper)
-savefig(mapper_chair_plot, "C:/Users/Nino/Desktop/tap_proj/project/mapper_chair")
+savefig(mapper_chair_plot, "mapper_chair")
 
 centers_chair = chair_mapper.centers_of_patches
 using Distances
@@ -384,7 +384,7 @@ using Ripserer
 
 result_chair = ripserer(dist_matrix_chair)
 fig_chair = plot(result_chair, title="Persistence Diagrams for Mapper Complex")
-savefig(fig_chair, "C:/Users/Nino/Desktop/tap_proj/project/persistence_diagram_chair")
+savefig(fig_chair, "persistence_diagram_chair")
 
 # ant_16
 
@@ -392,7 +392,7 @@ ant = get_abstract_matrix("data/articulated/ants/antsPly/16.ply")
 ant_mapper = mapper(ant, z_coordinate, balanced_cover, cluster_function, silhouette_method, no_of_intervals = 7, allowed_overlap = 0.7, ϵ = 1.0, measurement_func = point_distances2)
 println("no_of_patches: ", length(ant_mapper.found_patches))
 mapper_ant_plot = plot(ant_mapper)
-savefig(mapper_ant_plot, "C:/Users/Nino/Desktop/tap_proj/project/mapper_ant")
+savefig(mapper_ant_plot, "mapper_ant")
 
 centers_ant = ant_mapper.centers_of_patches
 using Distances
@@ -401,7 +401,7 @@ using Ripserer
 
 result_ant = ripserer(dist_matrix_ant)
 fig_ant = plot(result_ant, title="Persistence Diagrams for Mapper Complex")
-savefig(fig_ant, "C:/Users/Nino/Desktop/tap_proj/project/persistence_diagram__ant")
+savefig(fig_ant, "persistence_diagram__ant")
 
 # airplane_16
 
@@ -409,7 +409,7 @@ airplane = get_abstract_matrix("data/non-articulated/airplanes/airplanesPly/b16.
 airplane_mapper = mapper(airplane, z_coordinate, balanced_cover, cluster_function, silhouette_method, ϵ = 1.0, measurement_func = point_distances2)
 println("no_of_patches: ", length(airplane_mapper.found_patches))
 mapper_airplane_plot = plot(airplane_mapper)
-savefig(mapper_airplane_plot, "C:/Users/Nino/Desktop/tap_proj/project/mapper_airplane")
+savefig(mapper_airplane_plot, "mapper_airplane")
 
 centers_airplane = airplane_mapper.centers_of_patches
 using Distances
@@ -418,7 +418,7 @@ using Ripserer
 
 result_airplane = ripserer(dist_matrix_airplane)
 fig_airplane = plot(result_airplane, title="Persistence Diagrams for Mapper Complex")
-savefig(fig_airplane, "C:/Users/Nino/Desktop/tap_proj/project/persistence_diagram_airplane")
+savefig(fig_airplane, "persistence_diagram_airplane")
 
 # airplane_1
 
@@ -426,7 +426,7 @@ airplane1 = get_abstract_matrix("data/non-articulated/airplanes/airplanesPly/b1.
 airplane_mapper1 = mapper(airplane1, z_coordinate, balanced_cover, cluster_function, no_of_intervals=7, allowed_overlap=0.5, silhouette_method, ϵ = 1.0, measurement_func = point_distances2)
 println("no_of_patches: ", length(airplane_mapper1.found_patches))
 mapper_airplane1_plot = plot(airplane_mapper1)
-savefig(mapper_airplane1_plot, "C:/Users/Nino/Desktop/tap_proj/project/mapper_airplane1")
+savefig(mapper_airplane1_plot, "mapper_airplane1")
 
 centers_airplane1 = airplane_mapper1.centers_of_patches
 using Distances
@@ -435,7 +435,7 @@ using Ripserer
 
 result_airplane1 = ripserer(dist_matrix_airplane1)
 fig_airplane1 = plot(result_airplane1, title="Persistence Diagrams for Mapper Complex")
-savefig(fig_airplane1, "C:/Users/Nino/Desktop/tap_proj/project/persistence_diagram_airplane1")
+savefig(fig_airplane1, "persistence_diagram_airplane1")
 
 # airplane_2
 
@@ -443,7 +443,7 @@ airplane2 = get_abstract_matrix("data/non-articulated/airplanes/airplanesPly/b2.
 airplane_mapper2 = mapper(airplane2, z_coordinate, balanced_cover, cluster_function, silhouette_method, ϵ = 1.0, measurement_func = point_distances2)
 println("no_of_patches: ", length(airplane_mapper2.found_patches))
 mapper_airplane2_plot = plot(airplane_mapper2)
-savefig(mapper_airplane2_plot, "C:/Users/Nino/Desktop/tap_proj/project/mapper_airplane2")
+savefig(mapper_airplane2_plot, "mapper_airplane2")
 
 centers_airplane2 = airplane_mapper2.centers_of_patches
 using Distances
@@ -452,7 +452,7 @@ using Ripserer
 
 result_airplane2 = ripserer(dist_matrix_airplane2)
 fig_airplane2 = plot(result_airplane2, title="Persistence Diagrams for Mapper Complex")
-savefig(fig_airplane2, "C:/Users/Nino/Desktop/tap_proj/project/persistence_diagram_airplane2")
+savefig(fig_airplane2, "persistence_diagram_airplane2")
 
 # airplane_3
 
@@ -460,7 +460,7 @@ airplane3 = get_abstract_matrix("data/non-articulated/airplanes/airplanesPly/b3.
 airplane_mapper3 = mapper(airplane3, z_coordinate, balanced_cover, cluster_function, silhouette_method, ϵ = 1.0, measurement_func = point_distances2)
 println("no_of_patches: ", length(airplane_mapper3.found_patches))
 mapper_airplane3_plot = plot(airplane_mapper3)
-savefig(mapper_airplane3_plot, "C:/Users/Nino/Desktop/tap_proj/project/mapper_airplane3")
+savefig(mapper_airplane3_plot, "mapper_airplane3")
 
 centers_airplane3 = airplane_mapper3.centers_of_patches
 using Distances
@@ -469,7 +469,7 @@ using Ripserer
 
 result_airplane3 = ripserer(dist_matrix_airplane3)
 fig_airplane3 = plot(result_airplane3, title="Persistence Diagrams for Mapper Complex")
-savefig(fig_airplane3, "C:/Users/Nino/Desktop/tap_proj/project/persistence_diagram_airplane3")
+savefig(fig_airplane3, "persistence_diagram_airplane3")
 
 # airplane_4
 
@@ -477,7 +477,7 @@ airplane4 = get_abstract_matrix("data/non-articulated/airplanes/airplanesPly/b4.
 airplane_mapper4 = mapper(airplane4, z_coordinate, balanced_cover, cluster_function, silhouette_method, ϵ = 1.0, measurement_func = point_distances2)
 println("no_of_patches: ", length(airplane_mapper4.found_patches))
 mapper_airplane4_plot = plot(airplane_mapper4)
-savefig(mapper_airplane4_plot, "C:/Users/Nino/Desktop/tap_proj/project/mapper_airplane4")
+savefig(mapper_airplane4_plot, "mapper_airplane4")
 
 centers_airplane4 = airplane_mapper4.centers_of_patches
 using Distances
@@ -486,7 +486,7 @@ using Ripserer
 
 result_airplane4 = ripserer(dist_matrix_airplane4)
 fig_airplane4 = plot(result_airplane4, title="Persistence Diagrams for Mapper Complex")
-savefig(fig_airplane4, "C:/Users/Nino/Desktop/tap_proj/project/persistence_diagram_airplane4")
+savefig(fig_airplane4, "persistence_diagram_airplane4")
 
 
 
