@@ -427,7 +427,7 @@ end
 # chair_16, z-coordinate
 
 chair = get_abstract_matrix("data/non-articulated/chairs/chairsPly/b16.ply")
-chair_mapper = mapper(chair, z_coordinate, balanced_cover, cluster_function, silhouette_method, ϵ = 1.0, measurement_func = point_distances2)
+chair_mapper = mapper(chair, distance_points_to_line, balanced_cover, cluster_function, silhouette_method, d = [0.0,0.0,1.0], ϵ = 1.0, measurement_func = point_distances2)
 mapper_chair_plot = plot(chair_mapper)
 savefig(mapper_chair_plot, "mapper_chair_z_coordinate")
 
@@ -504,7 +504,7 @@ savefig(fig_chair5, "persistence_diagram_chair_distance_to_avg_point")
 # ant_16, z-coordinate
 
 ant = get_abstract_matrix("data/articulated/ants/antsPly/16.ply")
-ant_mapper = mapper(ant, z_coordinate, balanced_cover, cluster_function, silhouette_method, no_of_intervals = 7, allowed_overlap = 0.7, ϵ = 1.0, measurement_func = point_distances2)
+ant_mapper = mapper(ant, distance_points_to_line, balanced_cover, cluster_function, silhouette_method, d = [0.0,0.0,1.0], no_of_intervals = 7, allowed_overlap = 0.7, ϵ = 1.0, measurement_func = point_distances2)
 println("no_of_patches: ", length(ant_mapper.found_patches))
 mapper_ant_plot = plot(ant_mapper)
 savefig(mapper_ant_plot, "mapper_ant_z_coordinate")
@@ -586,7 +586,7 @@ savefig(fig_ant5, "persistence_diagram_ant_distance_to_avg_point")
 # airplane_16, z-coordinate
 
 airplane = get_abstract_matrix("data/non-articulated/airplanes/airplanesPly/b16.ply")
-airplane_mapper = mapper(airplane, z_coordinate, balanced_cover, cluster_function, silhouette_method, ϵ = 1.0, measurement_func = point_distances2)
+airplane_mapper = mapper(airplane, distance_points_to_line, balanced_cover, cluster_function, silhouette_method, d = [0.0,0.0,1.0], ϵ = 1.0, measurement_func = point_distances2)
 println("no_of_patches: ", length(airplane_mapper.found_patches))
 mapper_airplane_plot = plot(airplane_mapper)
 savefig(mapper_airplane_plot, "mapper_airplane_z_coordinate")
